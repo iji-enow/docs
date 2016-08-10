@@ -5,9 +5,11 @@ var mqtt = require('mqtt');
 var arrrg = "no connection";
 var settings = {
   type: 'mqtt',
+  // set 'true' if input type is json type
   json: true,
   mqtt: require('mqtt'),
-  url: 'http://192.168.128.20:1883'
+  // must use 'http://'
+  url: 'http://mqtt_url:port'
 };
 
 var settings_kafka = {
@@ -24,16 +26,18 @@ var settings_kafka = {
 };
 
 
-
+// build for mqtt
 ascoltatori.build(settings, function (err, ascoltatore) {
-    ascoltatore.subscribe("raspberry/text", function() {
+    ascoltatore.subscribe("topic_from_mqtt", function() {
         console.log(arguments);
         arrrg = arguments;
-        ascoltatore.publish("liamgall",arrrg, function(){
+        // for testing..
+        ascoltatore.publish("topic_for_mqtt",arrrg, function(){
             console.log(arguments);
         });
+        // build for kafka
         ascoltatori_kafka.build(settings_kafka, function (err_kafka, ascoltatore_kafka){
-            ascoltatore_kafka.publish("liamgall",arrrg, function(){
+            ascoltatore_kafka.publish("topic_for_kafka",arrrg, function(){
                 console.log(arguments);
             });
             if(err_kafka){
