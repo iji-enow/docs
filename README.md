@@ -1,6 +1,5 @@
 ENOW
 =====
-![System Architecture](http://i.imgur.com/19zJac5.png)
 
 __ENOW__ is a platform for huge Internet of Things environment. As the future scheme it will support Raspberry Pi for controlled IoT device via [MQTT](http://mqtt.org/) and webhooks for connecting other services and server via REST APIs over HTTP.
 
