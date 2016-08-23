@@ -20,7 +20,6 @@ Apache Storm + Apache Kafka:
 
 * [x] Support "org.apache.storm" class packages instead of "backtype.storm"
 * [x] Support Kafka Broker with Storm-Kafka(0.9.0.1) for Kafka Integration.
-* [ ] Support Trident Topology for powerful batch processing.
 * [x] Handling Python(actually Jython) on Java 1.8.
 * [x] Using Apache Kafka, connect other services, devices and server via mqtt and http.
 
