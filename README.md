@@ -17,7 +17,7 @@ In the latest version, the class packages have been changed from "backtype.storm
 
 These are the new features you should expect in the coming months
 
-Apache Storm + Apache Kafka + Apache Zookeeper:
+#### Apache Storm + Apache Kafka + Apache Zookeeper:
 
 * [x] Support "org.apache.storm" class packages instead of "backtype.storm"
 * [x] Support Kafka Broker with Storm-Kafka(0.9.0.1) for Kafka Integration.
@@ -31,7 +31,7 @@ Apache Storm + Apache Kafka + Apache Zookeeper:
 * [ ] Support Elasticsearch integration with Kibana.
 * [ ] Support PySpark(Apache Spark) for machine learning on ExecutingBolt.
 
-Docker:
+#### Docker:
 
 * [x] Including zkServer starter.
 * [x] Create docker image of Apache Storm.
@@ -44,7 +44,7 @@ Docker:
 * [x] Make Tutorial for build topologies on docker.
 * [ ] Support Docker Swarm.
 
-Console:
+#### Console:
 
 * [ ] Support visualization of statistics for IoT
 * [x] Connect console, services and server with Kafka and devices with Ascoltatori via MQTT, COAP and HTTP.
@@ -53,7 +53,7 @@ Console:
 * [ ] Save and Load Load-map for sharing.
 * [ ] Support npm for easy installation.
 
-RPi:
+#### API(RPi):
 
 * [ ] Alive topic for Init devices.
 * [ ] Add RPi GPIO Code.
